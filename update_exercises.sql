@@ -1,3 +1,5 @@
 USE codeup_test_db;
 
-update
+UPDATE
+SET
+WHERE
