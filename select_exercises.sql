@@ -1,31 +1,26 @@
 USE codeup_test_db;
 
-SELECT artist, name, release_date, sales, genre
+SELECT *
 from albums
 WHERE artist like 'Pink Floyd';
 
+SELECT release_date
+FROM albums a
+WHERE a.name like 'Sgt. Pepper%';
 
-SELECT artist, name, release_date, sales, genre
-from albums
-WHERE release_date like '1967';
+SELECT genre
+from albums a
+WHERE a.name like 'NeverMind';
 
-SELECT artist, name, release_date, sales, genre
-from albums
-WHERE name like 'NeverMind';
+SELECT *
+from albums a
+WHERE a.release_date BETWEEN 1989 AND 1999;
 
-SELECT artist, name, release_date, sales, genre
+SELECT *
 from albums
-WHERE release_date > '1990' < '2000';
+WHERE sales < 20.0;
 
-SELECT artist, name, release_date, sales, genre
-from albums
-WHERE release_date < '1990';
-
-SELECT artist, name, release_date, sales, genre
-from albums
-WHERE sales < '20';
-
-SELECT artist, name, release_date, sales, genre
-from albums
-WHERE genre like 'Rock';
+SELECT *
+from albums a
+WHERE genre like 'rock';
 
