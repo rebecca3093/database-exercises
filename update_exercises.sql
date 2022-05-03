@@ -4,8 +4,7 @@ UPDATE albums
 SET sales = sales * 10.0;
 
 UPDATE albums
-SET artist = 'Peter Jackson'
-WHERE artist = 'Michael Jackson'
+SET artist = 'Peter Jackson' WHERE artist = 'Michael Jackson';
 SELECT * FROM albums;
 
 START TRANSACTION;
