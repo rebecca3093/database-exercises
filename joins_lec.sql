@@ -96,5 +96,3 @@ SELECT CONCAT(p.first_name, ' ', p.last_name) AS Player,
 FROM players as p
 JOIN player_position AS pp ON p.id = pp.player_id
 JOIN positions AS pos ON pp.position_id = pos.id;
-
-
